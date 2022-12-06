@@ -33,11 +33,15 @@
             // 
             // panelContent
             // 
+            this.panelContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContent.AutoSize = true;
             this.panelContent.BackColor = System.Drawing.Color.Transparent;
             this.panelContent.BackgroundImage = global::DTETI_Room_Booker.Properties.Resources.dteti_transparent;
             this.panelContent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelContent.ForeColor = System.Drawing.Color.White;
-            this.panelContent.Location = new System.Drawing.Point(136, 60);
+            this.panelContent.Location = new System.Drawing.Point(130, 46);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(514, 377);
             this.panelContent.TabIndex = 0;
@@ -51,6 +55,7 @@
             this.Name = "FormHome";
             this.Text = "HOME";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

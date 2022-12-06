@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,29 @@ namespace DTETI_Room_Booker
         public FormMainMenu()
         {
             InitializeComponent();
+            LoadTheme();
+            //this.Text = String.Empty;
+            this.ControlBox = false;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.FormBorderStyle = FormBorderStyle.Sizable;
+        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        public void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
         }
 
         private Color SelectThemeColor()
@@ -57,13 +81,8 @@ namespace DTETI_Room_Booker
                 }
             }
         }
-
-        private void OpenChildForm(Form childForm, object btnSender)
+        private void NewChildForm(Form childForm, object btnSender)
         {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
             ActivateButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -74,6 +93,18 @@ namespace DTETI_Room_Booker
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
+        }
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+            if(activeForm == null)
+            {
+                NewChildForm(childForm, btnSender);
+            }
+            else if (activeForm != null && activeForm.Text != childForm.Text)
+            {
+                activeForm.Close();
+                NewChildForm(childForm, btnSender);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -102,6 +133,72 @@ namespace DTETI_Room_Booker
         private void btnContact_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FormContact(), sender);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void tableTitlePanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void MaximizeWindow()
+        {
+            var rectangle = Screen.FromControl(this).Bounds;
+            this.FormBorderStyle = FormBorderStyle.None;
+            Size = new Size(rectangle.Width, rectangle.Height);
+            Location = new Point(0, 0);
+            Rectangle workingRectangle = Screen.PrimaryScreen.WorkingArea;
+            this.Size = new Size(workingRectangle.Width, workingRectangle.Height);
         }
     }
 }

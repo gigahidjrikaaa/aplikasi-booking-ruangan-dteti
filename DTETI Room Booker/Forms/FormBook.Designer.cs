@@ -33,12 +33,18 @@
             // 
             // btnTombol
             // 
-            this.btnTombol.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTombol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTombol.AutoSize = true;
+            this.btnTombol.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTombol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTombol.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTombol.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnTombol.Location = new System.Drawing.Point(266, 127);
+            this.btnTombol.Location = new System.Drawing.Point(281, 186);
+            this.btnTombol.Margin = new System.Windows.Forms.Padding(0);
             this.btnTombol.Name = "btnTombol";
-            this.btnTombol.Size = new System.Drawing.Size(244, 157);
+            this.btnTombol.Size = new System.Drawing.Size(164, 56);
             this.btnTombol.TabIndex = 0;
             this.btnTombol.Text = "Tombol";
             this.btnTombol.UseVisualStyleBackColor = true;
@@ -53,6 +59,7 @@
             this.Name = "FormBook";
             this.Text = "BOOK";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
