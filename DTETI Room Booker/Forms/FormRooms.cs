@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DTETI_Room_Booker.Forms
 {
@@ -16,6 +18,7 @@ namespace DTETI_Room_Booker.Forms
         {
             InitializeComponent();
             LoadTheme();
+            
         }
         public void LoadTheme()
         {
@@ -31,14 +34,45 @@ namespace DTETI_Room_Booker.Forms
             }
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }

@@ -168,5 +168,8 @@
   <ItemGroup>
     <None Include="assets\icons\Write-1.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\RoomPicture\meeting-room.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
