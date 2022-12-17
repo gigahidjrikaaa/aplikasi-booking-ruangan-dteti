@@ -495,6 +495,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(16, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 19);
@@ -544,7 +545,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 46);
             this.button2.TabIndex = 34;
-            this.button2.Text = "Order";
+            this.button2.Text = "Booking";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // label12
