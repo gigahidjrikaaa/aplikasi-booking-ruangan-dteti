@@ -73,6 +73,16 @@ namespace DTETI_Room_Booker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap discussionRoom {
+            get {
+                object obj = ResourceManager.GetObject("discussionRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dteti_transparent {
             get {
                 object obj = ResourceManager.GetObject("dteti-transparent", resourceCulture);

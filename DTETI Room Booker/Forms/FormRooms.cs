@@ -44,7 +44,16 @@ namespace DTETI_Room_Booker.Forms
         {
             Control button = (Control)sender;
             roomSelectSetting(button, null);
+            RoomDescription(button, null);
 
+
+        }
+
+        private void RoomDescription(object sender, EventArgs e) 
+        {
+            pictureRoom.Image = Properties.Resources.discussionRoom;
+            pictureRoom.SizeMode = PictureBoxSizeMode.StretchImage;
+            roomName.Text = "Discussion Room";
         }
 
         private void roomSelectSetting(object sender, EventArgs e)
