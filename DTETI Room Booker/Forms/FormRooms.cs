@@ -37,15 +37,25 @@ namespace DTETI_Room_Booker.Forms
         private void Rooms_Load(object sender, EventArgs e)
         {
             label4.Text = "hello isnsa sajdnsa sjdsa jdns jsdns dsdnsada sjsdbsa aij said jiasdiasd jasd asdjias dias diasjd makan nasi goreng";
-            ConferenceRoom.BackColor = Color.Gray;
-            ConferenceRoom.ForeColor = Color.White;
         }
 
         private void selectedRoom(object sender, EventArgs e)
         {
-            var button = (Button)sender;
-            button.BackColor = Color.Gray;
-            button.ForeColor = Color.White;
+            Control button = (Control)sender;
+            roomSelectSetting(button, null);
+        }
+
+        private void roomSelectSetting(object sender, EventArgs e)
+        {
+            foreach(Control room in panelRoom.Controls)
+            {
+                room.BackColor = Color.WhiteSmoke;
+                room.ForeColor = Color.Black;
+            }
+
+            Control click = (Control)sender;
+            click.BackColor = Color.Gray;
+            click.ForeColor = Color.White;
         }
 
         private void label5_Click(object sender, EventArgs e)
