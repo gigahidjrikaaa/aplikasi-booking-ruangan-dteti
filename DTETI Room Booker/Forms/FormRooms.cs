@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Button = System.Windows.Forms.Button;
 
 namespace DTETI_Room_Booker.Forms
 {
@@ -33,33 +34,26 @@ namespace DTETI_Room_Booker.Forms
                 }
             }
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Rooms_Load(object sender, EventArgs e)
         {
-            
+            label4.Text = "hello isnsa sajdnsa sjdsa jdns jsdns dsdnsada sjsdbsa aij said jiasdiasd jasd asdjias dias diasjd makan nasi goreng";
+            ConferenceRoom.BackColor = Color.Gray;
+            ConferenceRoom.ForeColor = Color.White;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void selectedRoom(object sender, EventArgs e)
         {
-
+            var button = (Button)sender;
+            button.BackColor = Color.Gray;
+            button.ForeColor = Color.White;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -69,10 +63,14 @@ namespace DTETI_Room_Booker.Forms
 
         }
 
-        private void label4_TextChanged(object sender, EventArgs e)
+        private void label8_Click(object sender, EventArgs e)
         {
-           
+
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
