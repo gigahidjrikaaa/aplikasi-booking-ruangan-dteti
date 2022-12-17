@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +44,7 @@ namespace DTETI_Room_Booker.Forms
         {
             Control button = (Control)sender;
             roomSelectSetting(button, null);
+
         }
 
         private void roomSelectSetting(object sender, EventArgs e)
@@ -58,10 +60,6 @@ namespace DTETI_Room_Booker.Forms
             click.ForeColor = Color.White;
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -82,5 +80,22 @@ namespace DTETI_Room_Booker.Forms
         {
 
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

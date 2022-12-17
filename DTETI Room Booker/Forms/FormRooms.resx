@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label12.Text" xml:space="preserve">
+    <value>1. Pemesanan tidak bisa dilakukan pada periode waktu berjalan
+2. Pemesan yang tidak hadir dikenai sanksi berupa pelarangan booking ruangan 
+    selama 5 hari
+3. Ruang yang sudah dipesan oleh user lain tidak dapat dipesan lagi di hari yang sama
+</value>
+  </data>
 </root>
