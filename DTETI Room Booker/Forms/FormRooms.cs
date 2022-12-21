@@ -38,6 +38,8 @@ namespace DTETI_Room_Booker.Forms
         private void Rooms_Load(object sender, EventArgs e)
         {
             label4.Text = "hello isnsa sajdnsa sjdsa jdns jsdns dsdnsada sjsdbsa aij said jiasdiasd jasd asdjias dias diasjd makan nasi goreng";
+            dateTimePicker1.MinDate = DateTime.Now;
+            dateTimePicker1.MaxDate = DateTime.Now.AddDays(30);
         }
 
         private void selectedRoom(object sender, EventArgs e)
@@ -105,6 +107,9 @@ namespace DTETI_Room_Booker.Forms
 
         }
 
-        
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
