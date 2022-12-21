@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 562);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAccount";
-            this.Text = "BOOK";
+            this.Text = "ACCOUNT";
             this.ResumeLayout(false);
 
         }
