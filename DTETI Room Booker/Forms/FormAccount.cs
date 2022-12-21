@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DTETI_Room_Booker.Forms
 {
-    public partial class FormBook : Form
+    public partial class FormAccount : Form
     {
-        public FormBook()
+        public FormAccount()
         {
             InitializeComponent();
             LoadTheme();
