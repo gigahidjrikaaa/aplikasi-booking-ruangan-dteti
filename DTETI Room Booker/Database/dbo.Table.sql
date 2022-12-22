@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Table]
+﻿CREATE TABLE [dbo].[AccountsTable]
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
     [username] NVARCHAR(50) NULL, 
