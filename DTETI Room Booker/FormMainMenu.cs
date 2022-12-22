@@ -122,7 +122,7 @@ namespace DTETI_Room_Booker
 
         private void btnBook_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormAccount(), sender);
+            OpenChildForm(new Forms.FormRegister(), sender);
         }
 
         private void btnRooms_Click(object sender, EventArgs e)

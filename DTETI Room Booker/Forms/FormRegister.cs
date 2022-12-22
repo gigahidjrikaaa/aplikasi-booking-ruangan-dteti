@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DTETI_Room_Booker.Forms
 {
-    public partial class FormAccount : Form
+    public partial class FormRegister : Form
     {
-        public FormAccount()
+        public FormRegister()
         {
             InitializeComponent();
         }
