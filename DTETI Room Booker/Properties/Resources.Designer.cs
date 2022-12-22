@@ -73,6 +73,66 @@ namespace DTETI_Room_Booker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Coffee_and_Study_Room {
+            get {
+                object obj = ResourceManager.GetObject("Coffee_and_Study_Room", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Computer_Room {
+            get {
+                object obj = ResourceManager.GetObject("Computer_Room", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CR_Room_1 {
+            get {
+                object obj = ResourceManager.GetObject("CR_Room_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CR_Room_2 {
+            get {
+                object obj = ResourceManager.GetObject("CR_Room_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CR_Room_3 {
+            get {
+                object obj = ResourceManager.GetObject("CR_Room_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CR_Room_4 {
+            get {
+                object obj = ResourceManager.GetObject("CR_Room_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap discussionRoom {
             get {
                 object obj = ResourceManager.GetObject("discussionRoom", resourceCulture);
@@ -123,9 +183,29 @@ namespace DTETI_Room_Booker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap meeting_room {
+        internal static System.Drawing.Bitmap MR_Room_1 {
             get {
-                object obj = ResourceManager.GetObject("meeting-room", resourceCulture);
+                object obj = ResourceManager.GetObject("MR_Room_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MR_Room_2 {
+            get {
+                object obj = ResourceManager.GetObject("MR_Room_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MR_Room_3 {
+            get {
+                object obj = ResourceManager.GetObject("MR_Room_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +216,46 @@ namespace DTETI_Room_Booker.Properties {
         internal static System.Drawing.Bitmap Phone_1 {
             get {
                 object obj = ResourceManager.GetObject("Phone_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SR_Room_1 {
+            get {
+                object obj = ResourceManager.GetObject("SR_Room_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SR_Room_2 {
+            get {
+                object obj = ResourceManager.GetObject("SR_Room_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SR_Room_3 {
+            get {
+                object obj = ResourceManager.GetObject("SR_Room_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SR_Room_4 {
+            get {
+                object obj = ResourceManager.GetObject("SR_Room_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

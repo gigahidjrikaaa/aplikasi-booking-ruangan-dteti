@@ -47,20 +47,20 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelRoom = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.ConferenceRoom = new System.Windows.Forms.Button();
-            this.THIS = new System.Windows.Forms.Button();
+            this.computerRoom = new System.Windows.Forms.Button();
+            this.discussionRoom = new System.Windows.Forms.Button();
+            this.coffeeAndStudy = new System.Windows.Forms.Button();
+            this.studyRoom_3 = new System.Windows.Forms.Button();
+            this.meetingRoom_3 = new System.Windows.Forms.Button();
+            this.studyRoom_1 = new System.Windows.Forms.Button();
+            this.conferenceRoom_4 = new System.Windows.Forms.Button();
+            this.studyRoom_2 = new System.Windows.Forms.Button();
+            this.conferenceRoom_3 = new System.Windows.Forms.Button();
+            this.meetingRoom_1 = new System.Windows.Forms.Button();
+            this.studyRoom_4 = new System.Windows.Forms.Button();
+            this.meetingRoom_2 = new System.Windows.Forms.Button();
+            this.conferenceRoom_2 = new System.Windows.Forms.Button();
+            this.conferenceRoom_1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -277,207 +277,207 @@
             // 
             // panelRoom
             // 
-            this.panelRoom.Controls.Add(this.button15);
-            this.panelRoom.Controls.Add(this.button14);
-            this.panelRoom.Controls.Add(this.button13);
-            this.panelRoom.Controls.Add(this.button12);
-            this.panelRoom.Controls.Add(this.button11);
-            this.panelRoom.Controls.Add(this.button10);
-            this.panelRoom.Controls.Add(this.button9);
-            this.panelRoom.Controls.Add(this.button8);
-            this.panelRoom.Controls.Add(this.button7);
-            this.panelRoom.Controls.Add(this.button6);
-            this.panelRoom.Controls.Add(this.button5);
-            this.panelRoom.Controls.Add(this.button4);
-            this.panelRoom.Controls.Add(this.ConferenceRoom);
-            this.panelRoom.Controls.Add(this.THIS);
+            this.panelRoom.Controls.Add(this.computerRoom);
+            this.panelRoom.Controls.Add(this.discussionRoom);
+            this.panelRoom.Controls.Add(this.coffeeAndStudy);
+            this.panelRoom.Controls.Add(this.studyRoom_3);
+            this.panelRoom.Controls.Add(this.meetingRoom_3);
+            this.panelRoom.Controls.Add(this.studyRoom_1);
+            this.panelRoom.Controls.Add(this.conferenceRoom_4);
+            this.panelRoom.Controls.Add(this.studyRoom_2);
+            this.panelRoom.Controls.Add(this.conferenceRoom_3);
+            this.panelRoom.Controls.Add(this.meetingRoom_1);
+            this.panelRoom.Controls.Add(this.studyRoom_4);
+            this.panelRoom.Controls.Add(this.meetingRoom_2);
+            this.panelRoom.Controls.Add(this.conferenceRoom_2);
+            this.panelRoom.Controls.Add(this.conferenceRoom_1);
             this.panelRoom.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelRoom.Location = new System.Drawing.Point(158, 138);
             this.panelRoom.Name = "panelRoom";
             this.panelRoom.Size = new System.Drawing.Size(439, 229);
             this.panelRoom.TabIndex = 31;
             // 
-            // button15
+            // computerRoom
             // 
-            this.button15.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button15.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.Black;
-            this.button15.Location = new System.Drawing.Point(111, 168);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(101, 49);
-            this.button15.TabIndex = 30;
-            this.button15.Text = "INFO";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.selectedRoom);
+            this.computerRoom.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.computerRoom.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.computerRoom.ForeColor = System.Drawing.Color.Black;
+            this.computerRoom.Location = new System.Drawing.Point(111, 168);
+            this.computerRoom.Name = "computerRoom";
+            this.computerRoom.Size = new System.Drawing.Size(101, 49);
+            this.computerRoom.TabIndex = 30;
+            this.computerRoom.Text = "CompR";
+            this.computerRoom.UseVisualStyleBackColor = false;
+            this.computerRoom.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button14
+            // discussionRoom
             // 
-            this.button14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button14.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.Black;
-            this.button14.Location = new System.Drawing.Point(4, 168);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(101, 49);
-            this.button14.TabIndex = 29;
-            this.button14.Text = "INFO";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.selectedRoom);
+            this.discussionRoom.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.discussionRoom.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discussionRoom.ForeColor = System.Drawing.Color.Black;
+            this.discussionRoom.Location = new System.Drawing.Point(4, 168);
+            this.discussionRoom.Name = "discussionRoom";
+            this.discussionRoom.Size = new System.Drawing.Size(101, 49);
+            this.discussionRoom.TabIndex = 29;
+            this.discussionRoom.Text = "DR";
+            this.discussionRoom.UseVisualStyleBackColor = false;
+            this.discussionRoom.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button13
+            // coffeeAndStudy
             // 
-            this.button13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button13.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(322, 115);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(101, 49);
-            this.button13.TabIndex = 28;
-            this.button13.Text = "INFO";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.selectedRoom);
+            this.coffeeAndStudy.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.coffeeAndStudy.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coffeeAndStudy.ForeColor = System.Drawing.Color.Black;
+            this.coffeeAndStudy.Location = new System.Drawing.Point(322, 115);
+            this.coffeeAndStudy.Name = "coffeeAndStudy";
+            this.coffeeAndStudy.Size = new System.Drawing.Size(101, 49);
+            this.coffeeAndStudy.TabIndex = 28;
+            this.coffeeAndStudy.Text = "CnSR";
+            this.coffeeAndStudy.UseVisualStyleBackColor = false;
+            this.coffeeAndStudy.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button12
+            // studyRoom_3
             // 
-            this.button12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button12.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(111, 115);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(101, 49);
-            this.button12.TabIndex = 27;
-            this.button12.Text = "INFO";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.selectedRoom);
+            this.studyRoom_3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.studyRoom_3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studyRoom_3.ForeColor = System.Drawing.Color.Black;
+            this.studyRoom_3.Location = new System.Drawing.Point(111, 115);
+            this.studyRoom_3.Name = "studyRoom_3";
+            this.studyRoom_3.Size = new System.Drawing.Size(101, 49);
+            this.studyRoom_3.TabIndex = 27;
+            this.studyRoom_3.Text = "SR 3";
+            this.studyRoom_3.UseVisualStyleBackColor = false;
+            this.studyRoom_3.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button11
+            // meetingRoom_3
             // 
-            this.button11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(217, 62);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(101, 49);
-            this.button11.TabIndex = 26;
-            this.button11.Text = "INFO";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.selectedRoom);
+            this.meetingRoom_3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.meetingRoom_3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meetingRoom_3.ForeColor = System.Drawing.Color.Black;
+            this.meetingRoom_3.Location = new System.Drawing.Point(217, 62);
+            this.meetingRoom_3.Name = "meetingRoom_3";
+            this.meetingRoom_3.Size = new System.Drawing.Size(101, 49);
+            this.meetingRoom_3.TabIndex = 26;
+            this.meetingRoom_3.Text = "MR 3";
+            this.meetingRoom_3.UseVisualStyleBackColor = false;
+            this.meetingRoom_3.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button10
+            // studyRoom_1
             // 
-            this.button10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(322, 62);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(101, 49);
-            this.button10.TabIndex = 26;
-            this.button10.Text = "INFO";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.selectedRoom);
+            this.studyRoom_1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.studyRoom_1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studyRoom_1.ForeColor = System.Drawing.Color.Black;
+            this.studyRoom_1.Location = new System.Drawing.Point(322, 62);
+            this.studyRoom_1.Name = "studyRoom_1";
+            this.studyRoom_1.Size = new System.Drawing.Size(101, 49);
+            this.studyRoom_1.TabIndex = 26;
+            this.studyRoom_1.Text = "SR 1";
+            this.studyRoom_1.UseVisualStyleBackColor = false;
+            this.studyRoom_1.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button9
+            // conferenceRoom_4
             // 
-            this.button9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(322, 5);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(101, 49);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "INFO";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.selectedRoom);
+            this.conferenceRoom_4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.conferenceRoom_4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conferenceRoom_4.ForeColor = System.Drawing.Color.Black;
+            this.conferenceRoom_4.Location = new System.Drawing.Point(322, 5);
+            this.conferenceRoom_4.Name = "conferenceRoom_4";
+            this.conferenceRoom_4.Size = new System.Drawing.Size(101, 49);
+            this.conferenceRoom_4.TabIndex = 25;
+            this.conferenceRoom_4.Text = "CR 4";
+            this.conferenceRoom_4.UseVisualStyleBackColor = false;
+            this.conferenceRoom_4.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button8
+            // studyRoom_2
             // 
-            this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(4, 113);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(101, 49);
-            this.button8.TabIndex = 24;
-            this.button8.Text = "INFO";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.selectedRoom);
+            this.studyRoom_2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.studyRoom_2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studyRoom_2.ForeColor = System.Drawing.Color.Black;
+            this.studyRoom_2.Location = new System.Drawing.Point(4, 113);
+            this.studyRoom_2.Name = "studyRoom_2";
+            this.studyRoom_2.Size = new System.Drawing.Size(101, 49);
+            this.studyRoom_2.TabIndex = 24;
+            this.studyRoom_2.Text = "SR 2";
+            this.studyRoom_2.UseVisualStyleBackColor = false;
+            this.studyRoom_2.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button7
+            // conferenceRoom_3
             // 
-            this.button7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(217, 5);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(101, 49);
-            this.button7.TabIndex = 23;
-            this.button7.Text = "INFO";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.selectedRoom);
+            this.conferenceRoom_3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.conferenceRoom_3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conferenceRoom_3.ForeColor = System.Drawing.Color.Black;
+            this.conferenceRoom_3.Location = new System.Drawing.Point(217, 5);
+            this.conferenceRoom_3.Name = "conferenceRoom_3";
+            this.conferenceRoom_3.Size = new System.Drawing.Size(101, 49);
+            this.conferenceRoom_3.TabIndex = 23;
+            this.conferenceRoom_3.Text = "CR 3";
+            this.conferenceRoom_3.UseVisualStyleBackColor = false;
+            this.conferenceRoom_3.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button6
+            // meetingRoom_1
             // 
-            this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(4, 60);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(101, 49);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "INFO";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.selectedRoom);
+            this.meetingRoom_1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.meetingRoom_1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meetingRoom_1.ForeColor = System.Drawing.Color.Black;
+            this.meetingRoom_1.Location = new System.Drawing.Point(4, 60);
+            this.meetingRoom_1.Name = "meetingRoom_1";
+            this.meetingRoom_1.Size = new System.Drawing.Size(101, 49);
+            this.meetingRoom_1.TabIndex = 22;
+            this.meetingRoom_1.Text = "MR 1";
+            this.meetingRoom_1.UseVisualStyleBackColor = false;
+            this.meetingRoom_1.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button5
+            // studyRoom_4
             // 
-            this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(217, 113);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 49);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "INFO";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.selectedRoom);
+            this.studyRoom_4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.studyRoom_4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studyRoom_4.ForeColor = System.Drawing.Color.Black;
+            this.studyRoom_4.Location = new System.Drawing.Point(217, 113);
+            this.studyRoom_4.Name = "studyRoom_4";
+            this.studyRoom_4.Size = new System.Drawing.Size(101, 49);
+            this.studyRoom_4.TabIndex = 21;
+            this.studyRoom_4.Text = "SR 4";
+            this.studyRoom_4.UseVisualStyleBackColor = false;
+            this.studyRoom_4.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // button4
+            // meetingRoom_2
             // 
-            this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(111, 60);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 49);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "INFO";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.selectedRoom);
+            this.meetingRoom_2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.meetingRoom_2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meetingRoom_2.ForeColor = System.Drawing.Color.Black;
+            this.meetingRoom_2.Location = new System.Drawing.Point(111, 60);
+            this.meetingRoom_2.Name = "meetingRoom_2";
+            this.meetingRoom_2.Size = new System.Drawing.Size(101, 49);
+            this.meetingRoom_2.TabIndex = 20;
+            this.meetingRoom_2.Text = "MR 2";
+            this.meetingRoom_2.UseVisualStyleBackColor = false;
+            this.meetingRoom_2.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // ConferenceRoom
+            // conferenceRoom_2
             // 
-            this.ConferenceRoom.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ConferenceRoom.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConferenceRoom.ForeColor = System.Drawing.Color.Black;
-            this.ConferenceRoom.Location = new System.Drawing.Point(111, 5);
-            this.ConferenceRoom.Name = "ConferenceRoom";
-            this.ConferenceRoom.Size = new System.Drawing.Size(101, 49);
-            this.ConferenceRoom.TabIndex = 19;
-            this.ConferenceRoom.Text = "CR";
-            this.ConferenceRoom.UseVisualStyleBackColor = false;
-            this.ConferenceRoom.Click += new System.EventHandler(this.selectedRoom);
+            this.conferenceRoom_2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.conferenceRoom_2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conferenceRoom_2.ForeColor = System.Drawing.Color.Black;
+            this.conferenceRoom_2.Location = new System.Drawing.Point(111, 5);
+            this.conferenceRoom_2.Name = "conferenceRoom_2";
+            this.conferenceRoom_2.Size = new System.Drawing.Size(101, 49);
+            this.conferenceRoom_2.TabIndex = 19;
+            this.conferenceRoom_2.Text = "CR 2";
+            this.conferenceRoom_2.UseVisualStyleBackColor = false;
+            this.conferenceRoom_2.Click += new System.EventHandler(this.selectedRoom);
             // 
-            // THIS
+            // conferenceRoom_1
             // 
-            this.THIS.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.THIS.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.THIS.ForeColor = System.Drawing.Color.Black;
-            this.THIS.Location = new System.Drawing.Point(4, 5);
-            this.THIS.Name = "THIS";
-            this.THIS.Size = new System.Drawing.Size(101, 49);
-            this.THIS.TabIndex = 18;
-            this.THIS.Text = "INFO";
-            this.THIS.UseVisualStyleBackColor = false;
-            this.THIS.Click += new System.EventHandler(this.selectedRoom);
+            this.conferenceRoom_1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.conferenceRoom_1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conferenceRoom_1.ForeColor = System.Drawing.Color.Black;
+            this.conferenceRoom_1.Location = new System.Drawing.Point(4, 5);
+            this.conferenceRoom_1.Name = "conferenceRoom_1";
+            this.conferenceRoom_1.Size = new System.Drawing.Size(101, 49);
+            this.conferenceRoom_1.TabIndex = 18;
+            this.conferenceRoom_1.Text = "CR 1";
+            this.conferenceRoom_1.UseVisualStyleBackColor = false;
+            this.conferenceRoom_1.Click += new System.EventHandler(this.selectedRoom);
             // 
             // label8
             // 
@@ -552,13 +552,15 @@
             // 
             // pictureRoom
             // 
-            this.pictureRoom.Image = global::DTETI_Room_Booker.Properties.Resources.discussionRoom;
+            this.pictureRoom.ErrorImage = null;
+            this.pictureRoom.Image = global::DTETI_Room_Booker.Properties.Resources.Computer_Room;
             this.pictureRoom.Location = new System.Drawing.Point(22, 25);
             this.pictureRoom.Name = "pictureRoom";
             this.pictureRoom.Size = new System.Drawing.Size(251, 153);
             this.pictureRoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRoom.TabIndex = 1;
             this.pictureRoom.TabStop = false;
+            this.pictureRoom.Click += new System.EventHandler(this.pictureRoom_Click);
             // 
             // Rooms
             // 
@@ -606,20 +608,20 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button ConferenceRoom;
-        private System.Windows.Forms.Button THIS;
+        private System.Windows.Forms.Button computerRoom;
+        private System.Windows.Forms.Button discussionRoom;
+        private System.Windows.Forms.Button coffeeAndStudy;
+        private System.Windows.Forms.Button studyRoom_3;
+        private System.Windows.Forms.Button meetingRoom_3;
+        private System.Windows.Forms.Button studyRoom_1;
+        private System.Windows.Forms.Button conferenceRoom_4;
+        private System.Windows.Forms.Button studyRoom_2;
+        private System.Windows.Forms.Button conferenceRoom_3;
+        private System.Windows.Forms.Button meetingRoom_1;
+        private System.Windows.Forms.Button studyRoom_4;
+        private System.Windows.Forms.Button meetingRoom_2;
+        private System.Windows.Forms.Button conferenceRoom_2;
+        private System.Windows.Forms.Button conferenceRoom_1;
         private System.Windows.Forms.Panel panelRoom;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label10;

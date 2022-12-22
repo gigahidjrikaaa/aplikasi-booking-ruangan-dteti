@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,6 +39,9 @@ namespace DTETI_Room_Booker.Forms
         }
         private void Rooms_Load(object sender, EventArgs e)
         {
+
+            selectedRoom(conferenceRoom_1, null);
+
             label4.Text = "hello isnsa sajdnsa sjdsa jdns jsdns dsdnsada sjsdbsa aij said jiasdiasd jasd asdjias dias diasjd makan nasi goreng";
             dateTimePicker1.MinDate = DateTime.Now;
             dateTimePicker1.MaxDate = DateTime.Now.AddDays(30);
@@ -46,14 +51,63 @@ namespace DTETI_Room_Booker.Forms
         {
             Control button = (Control)sender;
             roomSelectSetting(button, null);
-            RoomDescription(button, null);
+            switch (button.Name) {
+                case "conferenceRoom_1":
+                    pictureRoom.Image = Properties.Resources.CR_Room_1;
+                    break;
+                case "conferenceRoom_2":
+                    pictureRoom.Image = Properties.Resources.CR_Room_2;
+                    break;
+                case "conferenceRoom_3":
+                    pictureRoom.Image = Properties.Resources.CR_Room_3;
+                    break;
+                case "conferenceRoom_4":
+                    pictureRoom.Image = Properties.Resources.CR_Room_4;
+                    break;
+                case "meetingRoom_1":
+                    pictureRoom.Image = Properties.Resources.MR_Room_1;
+                    break;
+                case "meetingRoom_2":
+                    pictureRoom.Image = Properties.Resources.MR_Room_2;
+                    break;
+                case "meetingRoom_3":
+                    pictureRoom.Image = Properties.Resources.MR_Room_3;
+                    break;
+                case "studyRoom_1":
+                    pictureRoom.Image = Properties.Resources.SR_Room_1;
+                    break;
+                case "studyRoom_2":
+                    pictureRoom.Image = Properties.Resources.SR_Room_2;
+                    break;
+                case "studyRoom_3":
+                    pictureRoom.Image = Properties.Resources.SR_Room_3;
+                    break;
+                case "studyRoom_4":
+                    pictureRoom.Image = Properties.Resources.SR_Room_4;
+                    break;
+                case "discussionRoom":
+                    pictureRoom.Image = Properties.Resources.discussionRoom;
+                    break;
+                case "coffeeAndStudy":
+                    pictureRoom.Image = Properties.Resources.Coffee_and_Study_Room;
+                    break;
+                case "computerRoom":
+                    pictureRoom.Image = Properties.Resources.Computer_Room;
+                    break;
+                default:
+                    pictureRoom.Image = Properties.Resources.Help_1;
+                    break;
+
+            }
+
 
 
         }
 
         private void RoomDescription(object sender, EventArgs e) 
-        {
-            pictureRoom.Image = Properties.Resources.discussionRoom;
+        {   
+            
+            pictureRoom.Image = Properties.Resources.SR_Room_4;
             pictureRoom.SizeMode = PictureBoxSizeMode.StretchImage;
             roomName.Text = "Discussion Room";
         }
@@ -110,6 +164,11 @@ namespace DTETI_Room_Booker.Forms
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureRoom_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
