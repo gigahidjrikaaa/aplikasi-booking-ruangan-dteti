@@ -133,15 +133,15 @@
             this.txtBoxMessage3.BackColor = System.Drawing.Color.Orange;
             this.txtBoxMessage3.BorderColor = System.Drawing.Color.Blue;
             this.txtBoxMessage3.BorderFocusColor = System.Drawing.Color.DarkViolet;
-            this.txtBoxMessage3.BorderSize = 2;
+            this.txtBoxMessage3.BorderSize = 4;
             this.txtBoxMessage3.Location = new System.Drawing.Point(271, 639);
             this.txtBoxMessage3.Multiline = true;
             this.txtBoxMessage3.Name = "txtBoxMessage3";
-            this.txtBoxMessage3.Padding = new System.Windows.Forms.Padding(7);
+            this.txtBoxMessage3.Padding = new System.Windows.Forms.Padding(12);
             this.txtBoxMessage3.PasswordChar = false;
             this.txtBoxMessage3.Size = new System.Drawing.Size(517, 166);
             this.txtBoxMessage3.TabIndex = 16;
-            this.txtBoxMessage3.Texts = "";
+            this.txtBoxMessage3.Texts = "Amazing Work!";
             this.txtBoxMessage3.UnderlinedStyle = false;
             // 
             // txtBoxMessage2
@@ -149,15 +149,15 @@
             this.txtBoxMessage2.BackColor = System.Drawing.Color.Orange;
             this.txtBoxMessage2.BorderColor = System.Drawing.Color.Blue;
             this.txtBoxMessage2.BorderFocusColor = System.Drawing.Color.DarkViolet;
-            this.txtBoxMessage2.BorderSize = 2;
+            this.txtBoxMessage2.BorderSize = 4;
             this.txtBoxMessage2.Location = new System.Drawing.Point(276, 398);
             this.txtBoxMessage2.Multiline = true;
             this.txtBoxMessage2.Name = "txtBoxMessage2";
-            this.txtBoxMessage2.Padding = new System.Windows.Forms.Padding(7);
+            this.txtBoxMessage2.Padding = new System.Windows.Forms.Padding(12);
             this.txtBoxMessage2.PasswordChar = false;
             this.txtBoxMessage2.Size = new System.Drawing.Size(517, 166);
             this.txtBoxMessage2.TabIndex = 15;
-            this.txtBoxMessage2.Texts = "";
+            this.txtBoxMessage2.Texts = "Great Job!";
             this.txtBoxMessage2.UnderlinedStyle = false;
             // 
             // txtBoxMessage1
@@ -165,15 +165,15 @@
             this.txtBoxMessage1.BackColor = System.Drawing.Color.Orange;
             this.txtBoxMessage1.BorderColor = System.Drawing.Color.Blue;
             this.txtBoxMessage1.BorderFocusColor = System.Drawing.Color.DarkViolet;
-            this.txtBoxMessage1.BorderSize = 2;
+            this.txtBoxMessage1.BorderSize = 4;
             this.txtBoxMessage1.Location = new System.Drawing.Point(276, 165);
             this.txtBoxMessage1.Multiline = true;
             this.txtBoxMessage1.Name = "txtBoxMessage1";
-            this.txtBoxMessage1.Padding = new System.Windows.Forms.Padding(7);
+            this.txtBoxMessage1.Padding = new System.Windows.Forms.Padding(12);
             this.txtBoxMessage1.PasswordChar = false;
             this.txtBoxMessage1.Size = new System.Drawing.Size(517, 166);
             this.txtBoxMessage1.TabIndex = 14;
-            this.txtBoxMessage1.Texts = "";
+            this.txtBoxMessage1.Texts = "Thank you!";
             this.txtBoxMessage1.UnderlinedStyle = false;
             this.txtBoxMessage1.Load += new System.EventHandler(this.txtBoxMessage1_Load);
             // 
@@ -229,6 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1067, 916);
             this.Controls.Add(this.txtBoxMessage3);
             this.Controls.Add(this.txtBoxMessage2);

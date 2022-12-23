@@ -39,6 +39,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listView2 = new System.Windows.Forms.ListView();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -51,13 +52,14 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1073, 1080);
+            this.panel1.Size = new System.Drawing.Size(1073, 1158);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -204,11 +206,19 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listView_ClickColor);
             // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 1035);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1073, 123);
+            this.panel5.TabIndex = 5;
+            // 
             // FormFAQ
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1073, 1080);
+            this.ClientSize = new System.Drawing.Size(1073, 1158);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormFAQ";
@@ -239,5 +249,6 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblAsk;
+        private System.Windows.Forms.Panel panel5;
     }
 }

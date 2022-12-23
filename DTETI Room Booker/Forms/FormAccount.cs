@@ -29,7 +29,7 @@ namespace DTETI_Room_Booker.Forms
         private void FormAccount_Load(object sender, EventArgs e)
         {
    
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Programming\Projek UAS PBO\aplikasi-booking-ruangan-dteti\DTETI Room Booker\DatabaseUser.mdf"";Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Astaga Ngoding\aplikasi-booking-ruangan-dteti\DTETI Room Booker\DatabaseUser.mdf"";Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             SqlDataReader sr = null;
             cmd.Connection = con;
@@ -46,7 +46,7 @@ namespace DTETI_Room_Booker.Forms
 
         private void getData(int id)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Programming\Projek UAS PBO\aplikasi-booking-ruangan-dteti\DTETI Room Booker\DatabaseUser.mdf"";Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Astaga Ngoding\aplikasi-booking-ruangan-dteti\DTETI Room Booker\DatabaseUser.mdf"";Integrated Security=True");
             using (SqlCommand cmd = con.CreateCommand())
             {
                 try
