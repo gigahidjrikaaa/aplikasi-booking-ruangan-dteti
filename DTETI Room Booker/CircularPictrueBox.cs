@@ -13,7 +13,6 @@ namespace DTETI_Room_Booker
 {
     class CircularPictureBox : PictureBox
     {
-        private const string V = "Circular Picture Box";
         private int borderSize = 2;
         private Color borderColor = Color.RoyalBlue;
         private Color borderColor2 = Color.HotPink;
@@ -26,7 +25,7 @@ namespace DTETI_Room_Booker
             this.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        [Category(V)]
+        [Category("Circular Picture Box")]
         public int BorderSize
         {
             get { return borderSize; }
@@ -36,7 +35,7 @@ namespace DTETI_Room_Booker
                 this.Invalidate();
             }
         }
-        [Category(V)]
+        [Category("Circular Picture Box")]
         public Color BorderColor
         {
             get { return borderColor; }
@@ -46,7 +45,7 @@ namespace DTETI_Room_Booker
                 this.Invalidate();
             }
         }
-        [Category(V)]
+        [Category("Circular Picture Box")]
         public Color BorderColor2
         {
             get { return borderColor2; }
@@ -56,7 +55,7 @@ namespace DTETI_Room_Booker
                 this.Invalidate();
             }
         }
-        [Category(V)]
+        [Category("Circular Picture Box")]
         public DashStyle BorderLineStyle
         {
             get { return borderLineStyle; }
@@ -66,7 +65,7 @@ namespace DTETI_Room_Booker
                 this.Invalidate();
             }
         }
-        [Category(V)]
+        [Category("Circular Picture Box")]
         public DashCap BorderCapStyle
         {
             get { return borderCapStyle; }
@@ -76,7 +75,7 @@ namespace DTETI_Room_Booker
                 this.Invalidate();
             }
         }
-        [Category(V)]
+        [Category("Circular Picture Box")]
         public float GradientAngle
         {
             get { return gradientAngle; }

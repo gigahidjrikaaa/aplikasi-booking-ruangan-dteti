@@ -13,7 +13,9 @@ namespace DTETI_Room_Booker.Forms
 {
     public partial class FormContact : Form
     {
-        private string number1 = "+6281234567890";
+        private string number1 = "+6281227360323"; //Giga
+        private string number2 = "+6281232749996"; //Difta
+        private string number3 = "+6281227360323"; //Daffa
         public FormContact()
         {
             InitializeComponent();
@@ -33,34 +35,64 @@ namespace DTETI_Room_Booker.Forms
             }
         }
 
+        private void SendWhatsapp(string number, string message)
+        {
+            try
+            {
+                if (number == "")
+                {
+                    MessageBox.Show("No number assigned to this person. Please contact your admin.");
+                }
+                if (number.Length <= 0)
+                {
+                    number = "+62" + number;
+                }
+                number = number.Replace(" ", "");
+                number = number.Replace("-", "");
+                System.Diagnostics.Process.Start("http://api.whatsapp.com/send?phone=" + number + "&text=" + message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void lblContact1_Click(object sender, EventArgs e)
         {
-            //WhatsappContactLib.sendWhatsapp(number1, txtBoxMessage1.Text);
+            
         }
 
         private void btnSend1_Click(object sender, EventArgs e)
         {
-
+            SendWhatsapp(number1, txtBoxMessage1.Texts);
         }
 
         private void btnSend2_Click(object sender, EventArgs e)
         {
-
+            SendWhatsapp(number2, txtBoxMessage2.Texts);
         }
 
         private void btnSend3_Click(object sender, EventArgs e)
         {
-
+            SendWhatsapp(number3, txtBoxMessage3.Texts);
         }
 
         private void btnSend1_MouseDown(object sender, MouseEventArgs e)
         {
-            this.BackColor = ThemeColor.PrimaryColor;
+            Button thisButton = (Button) sender;
+            thisButton.BackColor = ThemeColor.SecondaryColor;
         }
 
         private void btnSend1_MouseUp(object sender, MouseEventArgs e)
         {
-            this.BackColor = ThemeColor.SecondaryColor;
+            Button thisButton = (Button)sender;
+            thisButton.BackColor = ThemeColor.PrimaryColor;
         }
+
+        private void txtBoxMessage1_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

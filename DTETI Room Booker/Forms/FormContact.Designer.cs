@@ -30,20 +30,20 @@
         {
             this.lblSendMessage = new System.Windows.Forms.Label();
             this.lblName1 = new System.Windows.Forms.Label();
-            this.txtBoxMessage1 = new System.Windows.Forms.TextBox();
-            this.txtBoxMessage2 = new System.Windows.Forms.TextBox();
             this.lblName2 = new System.Windows.Forms.Label();
-            this.txtBoxMessage3 = new System.Windows.Forms.TextBox();
             this.lblName3 = new System.Windows.Forms.Label();
             this.btnSend1 = new System.Windows.Forms.Button();
             this.btnSend2 = new System.Windows.Forms.Button();
             this.btnSend3 = new System.Windows.Forms.Button();
+            this.txtBoxMessage3 = new DTETI_Room_Booker.CustomTextBox();
+            this.txtBoxMessage2 = new DTETI_Room_Booker.CustomTextBox();
+            this.txtBoxMessage1 = new DTETI_Room_Booker.CustomTextBox();
+            this.circularPictureBox2 = new DTETI_Room_Booker.CircularPictureBox();
             this.circularPictureBox3 = new DTETI_Room_Booker.CircularPictureBox();
             this.circularPictureBox1 = new DTETI_Room_Booker.CircularPictureBox();
-            this.circularPictureBox2 = new DTETI_Room_Booker.CircularPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSendMessage
@@ -70,24 +70,6 @@
             this.lblName1.TabIndex = 1;
             this.lblName1.Text = "Giga";
             // 
-            // txtBoxMessage1
-            // 
-            this.txtBoxMessage1.BackColor = System.Drawing.Color.Orange;
-            this.txtBoxMessage1.Location = new System.Drawing.Point(265, 170);
-            this.txtBoxMessage1.Multiline = true;
-            this.txtBoxMessage1.Name = "txtBoxMessage1";
-            this.txtBoxMessage1.Size = new System.Drawing.Size(528, 152);
-            this.txtBoxMessage1.TabIndex = 2;
-            // 
-            // txtBoxMessage2
-            // 
-            this.txtBoxMessage2.BackColor = System.Drawing.Color.Orange;
-            this.txtBoxMessage2.Location = new System.Drawing.Point(265, 398);
-            this.txtBoxMessage2.Multiline = true;
-            this.txtBoxMessage2.Name = "txtBoxMessage2";
-            this.txtBoxMessage2.Size = new System.Drawing.Size(528, 152);
-            this.txtBoxMessage2.TabIndex = 4;
-            // 
             // lblName2
             // 
             this.lblName2.AutoSize = true;
@@ -98,15 +80,6 @@
             this.lblName2.Size = new System.Drawing.Size(75, 36);
             this.lblName2.TabIndex = 3;
             this.lblName2.Text = "Difta";
-            // 
-            // txtBoxMessage3
-            // 
-            this.txtBoxMessage3.BackColor = System.Drawing.Color.Orange;
-            this.txtBoxMessage3.Location = new System.Drawing.Point(265, 639);
-            this.txtBoxMessage3.Multiline = true;
-            this.txtBoxMessage3.Name = "txtBoxMessage3";
-            this.txtBoxMessage3.Size = new System.Drawing.Size(528, 152);
-            this.txtBoxMessage3.TabIndex = 6;
             // 
             // lblName3
             // 
@@ -155,6 +128,71 @@
             this.btnSend3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnSend1_MouseDown);
             this.btnSend3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnSend1_MouseUp);
             // 
+            // txtBoxMessage3
+            // 
+            this.txtBoxMessage3.BackColor = System.Drawing.Color.Orange;
+            this.txtBoxMessage3.BorderColor = System.Drawing.Color.Blue;
+            this.txtBoxMessage3.BorderFocusColor = System.Drawing.Color.DarkViolet;
+            this.txtBoxMessage3.BorderSize = 2;
+            this.txtBoxMessage3.Location = new System.Drawing.Point(271, 639);
+            this.txtBoxMessage3.Multiline = true;
+            this.txtBoxMessage3.Name = "txtBoxMessage3";
+            this.txtBoxMessage3.Padding = new System.Windows.Forms.Padding(7);
+            this.txtBoxMessage3.PasswordChar = false;
+            this.txtBoxMessage3.Size = new System.Drawing.Size(517, 166);
+            this.txtBoxMessage3.TabIndex = 16;
+            this.txtBoxMessage3.Texts = "";
+            this.txtBoxMessage3.UnderlinedStyle = false;
+            // 
+            // txtBoxMessage2
+            // 
+            this.txtBoxMessage2.BackColor = System.Drawing.Color.Orange;
+            this.txtBoxMessage2.BorderColor = System.Drawing.Color.Blue;
+            this.txtBoxMessage2.BorderFocusColor = System.Drawing.Color.DarkViolet;
+            this.txtBoxMessage2.BorderSize = 2;
+            this.txtBoxMessage2.Location = new System.Drawing.Point(276, 398);
+            this.txtBoxMessage2.Multiline = true;
+            this.txtBoxMessage2.Name = "txtBoxMessage2";
+            this.txtBoxMessage2.Padding = new System.Windows.Forms.Padding(7);
+            this.txtBoxMessage2.PasswordChar = false;
+            this.txtBoxMessage2.Size = new System.Drawing.Size(517, 166);
+            this.txtBoxMessage2.TabIndex = 15;
+            this.txtBoxMessage2.Texts = "";
+            this.txtBoxMessage2.UnderlinedStyle = false;
+            // 
+            // txtBoxMessage1
+            // 
+            this.txtBoxMessage1.BackColor = System.Drawing.Color.Orange;
+            this.txtBoxMessage1.BorderColor = System.Drawing.Color.Blue;
+            this.txtBoxMessage1.BorderFocusColor = System.Drawing.Color.DarkViolet;
+            this.txtBoxMessage1.BorderSize = 2;
+            this.txtBoxMessage1.Location = new System.Drawing.Point(276, 165);
+            this.txtBoxMessage1.Multiline = true;
+            this.txtBoxMessage1.Name = "txtBoxMessage1";
+            this.txtBoxMessage1.Padding = new System.Windows.Forms.Padding(7);
+            this.txtBoxMessage1.PasswordChar = false;
+            this.txtBoxMessage1.Size = new System.Drawing.Size(517, 166);
+            this.txtBoxMessage1.TabIndex = 14;
+            this.txtBoxMessage1.Texts = "";
+            this.txtBoxMessage1.UnderlinedStyle = false;
+            this.txtBoxMessage1.Load += new System.EventHandler(this.txtBoxMessage1_Load);
+            // 
+            // circularPictureBox2
+            // 
+            this.circularPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.circularPictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.circularPictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
+            this.circularPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.circularPictureBox2.BorderSize = 2;
+            this.circularPictureBox2.GradientAngle = 50F;
+            this.circularPictureBox2.Image = global::DTETI_Room_Booker.Properties.Resources.difta;
+            this.circularPictureBox2.Location = new System.Drawing.Point(70, 398);
+            this.circularPictureBox2.Name = "circularPictureBox2";
+            this.circularPictureBox2.Size = new System.Drawing.Size(166, 166);
+            this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPictureBox2.TabIndex = 13;
+            this.circularPictureBox2.TabStop = false;
+            // 
             // circularPictureBox3
             // 
             this.circularPictureBox3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -187,46 +225,30 @@
             this.circularPictureBox1.TabIndex = 10;
             this.circularPictureBox1.TabStop = false;
             // 
-            // circularPictureBox2
-            // 
-            this.circularPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.circularPictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.circularPictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
-            this.circularPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.circularPictureBox2.BorderSize = 2;
-            this.circularPictureBox2.GradientAngle = 50F;
-            this.circularPictureBox2.Image = global::DTETI_Room_Booker.Properties.Resources.difta;
-            this.circularPictureBox2.Location = new System.Drawing.Point(70, 398);
-            this.circularPictureBox2.Name = "circularPictureBox2";
-            this.circularPictureBox2.Size = new System.Drawing.Size(166, 166);
-            this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPictureBox2.TabIndex = 13;
-            this.circularPictureBox2.TabStop = false;
-            // 
             // FormContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 916);
+            this.Controls.Add(this.txtBoxMessage3);
+            this.Controls.Add(this.txtBoxMessage2);
+            this.Controls.Add(this.txtBoxMessage1);
             this.Controls.Add(this.circularPictureBox2);
             this.Controls.Add(this.circularPictureBox3);
             this.Controls.Add(this.circularPictureBox1);
             this.Controls.Add(this.btnSend3);
             this.Controls.Add(this.btnSend2);
             this.Controls.Add(this.btnSend1);
-            this.Controls.Add(this.txtBoxMessage3);
             this.Controls.Add(this.lblName3);
-            this.Controls.Add(this.txtBoxMessage2);
             this.Controls.Add(this.lblName2);
-            this.Controls.Add(this.txtBoxMessage1);
             this.Controls.Add(this.lblName1);
             this.Controls.Add(this.lblSendMessage);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormContact";
             this.Text = "CONTACT";
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,10 +258,7 @@
 
         private System.Windows.Forms.Label lblSendMessage;
         private System.Windows.Forms.Label lblName1;
-        private System.Windows.Forms.TextBox txtBoxMessage1;
-        private System.Windows.Forms.TextBox txtBoxMessage2;
         private System.Windows.Forms.Label lblName2;
-        private System.Windows.Forms.TextBox txtBoxMessage3;
         private System.Windows.Forms.Label lblName3;
         private System.Windows.Forms.Button btnSend1;
         private System.Windows.Forms.Button btnSend2;
@@ -247,5 +266,8 @@
         private CircularPictureBox circularPictureBox1;
         private CircularPictureBox circularPictureBox3;
         private CircularPictureBox circularPictureBox2;
+        private CustomTextBox txtBoxMessage1;
+        private CustomTextBox txtBoxMessage2;
+        private CustomTextBox txtBoxMessage3;
     }
 }

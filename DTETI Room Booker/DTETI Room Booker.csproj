@@ -173,6 +173,12 @@
     <Compile Include="CircularPictrueBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
       <DependentUpon>RoomDBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
