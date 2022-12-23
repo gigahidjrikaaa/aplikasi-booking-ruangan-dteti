@@ -30,5 +30,10 @@ namespace DTETI_Room_Booker.Forms
                 }
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

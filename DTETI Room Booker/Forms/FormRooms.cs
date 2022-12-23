@@ -154,22 +154,17 @@ namespace DTETI_Room_Booker.Forms
                 {
                     MessageBox.Show(ex.Message);
                 }
-                try
+                using (var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                 {
-                    using (var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+
+                    while (reader.Read())
                     {
+                        roomName.Text = reader["Name"].ToString();
+                        roomCapacity.Text = reader["Seats"].ToString();
+                        roomExplanation.Text = reader["Description"].ToString();
 
-                        while (reader.Read())
-                        {
-                            roomName.Text = reader["Name"].ToString();
-                            roomCapacity.Text = reader["Seats"].ToString();
-                            roomExplanation.Text = reader["Description"].ToString();
-
-                        }
                     }
                 }
-                catch (Exception ex)
-                { MessageBox.Show(ex.Message);}
             }
         }
 
