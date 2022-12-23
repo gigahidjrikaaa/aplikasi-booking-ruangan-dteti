@@ -31,22 +31,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSend = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.listView2 = new System.Windows.Forms.ListView();
             this.customTextBox1 = new DTETI_Room_Booker.CustomTextBox();
             this.txtBoxName = new DTETI_Room_Booker.CustomTextBox();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblAsk = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,7 +76,6 @@
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSend.BackColor = ThemeColor.PrimaryColor;
             this.btnSend.ForeColor = System.Drawing.Color.White;
             this.btnSend.Location = new System.Drawing.Point(807, 32);
             this.btnSend.Name = "btnSend";
@@ -84,42 +83,6 @@
             this.btnSend.TabIndex = 1;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.splitContainer1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(50);
-            this.panel2.Size = new System.Drawing.Size(1073, 384);
-            this.panel2.TabIndex = 2;
-            // 
-            // listView1
-            // 
-            this.listView1.BackColor = ThemeColor.PrimaryColor;
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.ForeColor = System.Drawing.Color.White;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(714, 284);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView2
-            // 
-            this.listView2.BackColor = ThemeColor.PrimaryColor;
-            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.ForeColor = System.Drawing.Color.White;
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(0, 0);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(255, 284);
-            this.listView2.TabIndex = 1;
-            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // customTextBox1
             // 
@@ -163,6 +126,35 @@
             this.txtBoxName.Texts = "Name";
             this.txtBoxName.UnderlinedStyle = true;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lblAsk);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 384);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1073, 117);
+            this.panel4.TabIndex = 4;
+            // 
+            // lblAsk
+            // 
+            this.lblAsk.AutoSize = true;
+            this.lblAsk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAsk.Location = new System.Drawing.Point(42, 40);
+            this.lblAsk.Name = "lblAsk";
+            this.lblAsk.Size = new System.Drawing.Size(386, 44);
+            this.lblAsk.TabIndex = 0;
+            this.lblAsk.Text = "ASK US ANYTHING!";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.splitContainer1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(50);
+            this.panel2.Size = new System.Drawing.Size(1073, 384);
+            this.panel2.TabIndex = 2;
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -180,25 +172,29 @@
             this.splitContainer1.SplitterDistance = 255;
             this.splitContainer1.TabIndex = 0;
             // 
-            // panel4
+            // listView2
             // 
-            this.panel4.Controls.Add(this.lblAsk);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 384);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1073, 117);
-            this.panel4.TabIndex = 4;
-            this.panel4.BackColor = ThemeColor.PrimaryColor;
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView2.ForeColor = System.Drawing.Color.White;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(0, 0);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(255, 284);
+            this.listView2.TabIndex = 1;
+            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
-            // lblAsk
+            // listView1
             // 
-            this.lblAsk.AutoSize = true;
-            this.lblAsk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAsk.Location = new System.Drawing.Point(50, 44);
-            this.lblAsk.Name = "lblAsk";
-            this.lblAsk.Size = new System.Drawing.Size(386, 44);
-            this.lblAsk.TabIndex = 0;
-            this.lblAsk.Text = "ASK US ANYTHING!";
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.ForeColor = System.Drawing.Color.White;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(714, 284);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // FormFAQ
             // 
@@ -211,13 +207,13 @@
             this.Text = "FAQ";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
