@@ -197,6 +197,7 @@
             this.button2.TabIndex = 34;
             this.button2.Text = "Booking";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel6
             // 

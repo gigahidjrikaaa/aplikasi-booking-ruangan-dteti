@@ -50,10 +50,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(308, 327);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(205, 209);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 33);
+            this.label1.Size = new System.Drawing.Size(67, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name:";
             // 
@@ -65,10 +64,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(308, 452);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(205, 289);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 33);
+            this.label2.Size = new System.Drawing.Size(63, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Prodi:";
             // 
@@ -80,10 +78,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(308, 391);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(205, 250);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 33);
+            this.label3.Size = new System.Drawing.Size(50, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nim:";
             // 
@@ -92,10 +89,9 @@
             this.txtname.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtname.Location = new System.Drawing.Point(477, 330);
-            this.txtname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtname.Location = new System.Drawing.Point(318, 211);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(391, 31);
+            this.txtname.Size = new System.Drawing.Size(267, 22);
             this.txtname.TabIndex = 4;
             // 
             // txtprodi
@@ -103,10 +99,9 @@
             this.txtprodi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtprodi.Location = new System.Drawing.Point(477, 452);
-            this.txtprodi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtprodi.Location = new System.Drawing.Point(318, 289);
             this.txtprodi.Name = "txtprodi";
-            this.txtprodi.Size = new System.Drawing.Size(391, 31);
+            this.txtprodi.Size = new System.Drawing.Size(267, 22);
             this.txtprodi.TabIndex = 5;
             // 
             // txtnim
@@ -114,10 +109,9 @@
             this.txtnim.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtnim.Location = new System.Drawing.Point(477, 391);
-            this.txtnim.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtnim.Location = new System.Drawing.Point(318, 250);
             this.txtnim.Name = "txtnim";
-            this.txtnim.Size = new System.Drawing.Size(391, 31);
+            this.txtnim.Size = new System.Drawing.Size(267, 22);
             this.txtnim.TabIndex = 6;
             // 
             // insert
@@ -126,10 +120,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insert.Location = new System.Drawing.Point(314, 527);
-            this.insert.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.insert.Location = new System.Drawing.Point(209, 337);
             this.insert.Name = "insert";
-            this.insert.Size = new System.Drawing.Size(554, 86);
+            this.insert.Size = new System.Drawing.Size(374, 70);
             this.insert.TabIndex = 7;
             this.insert.Text = "Insert";
             this.insert.UseVisualStyleBackColor = true;
@@ -147,9 +140,11 @@
             this.panel1.Controls.Add(this.txtname);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 703);
+            this.panel1.Size = new System.Drawing.Size(805, 465);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -157,22 +152,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::DTETI_Room_Booker.Properties.Resources.dteti_transparent;
             this.pictureBox1.InitialImage = global::DTETI_Room_Booker.Properties.Resources.dteti_transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(314, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(209, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(554, 288);
+            this.pictureBox1.Size = new System.Drawing.Size(374, 184);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 703);
+            this.ClientSize = new System.Drawing.Size(805, 465);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(1226, 774);
+            this.MinimumSize = new System.Drawing.Size(823, 512);
             this.Name = "Register";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);

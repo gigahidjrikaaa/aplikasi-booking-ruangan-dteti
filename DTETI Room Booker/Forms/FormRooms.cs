@@ -14,6 +14,7 @@ using System.Xml;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Button = System.Windows.Forms.Button;
 using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace DTETI_Room_Booker.Forms
 {
@@ -168,6 +169,17 @@ namespace DTETI_Room_Booker.Forms
             }
         }
 
-     
+        private void button2_Click(object sender, EventArgs e)
+        {
+            /*SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Programming\Projek UAS PBO\aplikasi-booking-ruangan-dteti\DTETI Room Booker\DatabaseBookings.mdf"";Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into [TableUser](RoomName,isBooked,Date) values ('" + txtname.Text + "','" + txtnim.Text + "','" + txtprodi.Text + "')";
+            cmd.ExecuteNonQuery();
+            
+            con.Close();*/
+            MessageBox.Show("Succes Booking");
+        }
     }
 }
