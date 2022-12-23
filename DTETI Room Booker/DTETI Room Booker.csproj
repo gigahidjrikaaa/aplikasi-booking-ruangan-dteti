@@ -354,6 +354,7 @@
     </Content>
     <None Include="Resources\PP.jpg" />
     <None Include="Resources\difta.jpg" />
+    <None Include="Resources\daffa.jpg" />
     <Content Include="RoomDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

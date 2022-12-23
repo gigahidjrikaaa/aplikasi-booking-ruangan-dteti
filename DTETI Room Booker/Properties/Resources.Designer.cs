@@ -133,6 +133,16 @@ namespace DTETI_Room_Booker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap daffa {
+            get {
+                object obj = ResourceManager.GetObject("daffa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap difta {
             get {
                 object obj = ResourceManager.GetObject("difta", resourceCulture);
