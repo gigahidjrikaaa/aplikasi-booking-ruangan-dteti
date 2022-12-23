@@ -33,5 +33,16 @@ namespace DTETI_Room_Booker.Properties {
                 return ((string)(this["RoomDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\makan.mdf;Int" +
+            "egrated Security=True")]
+        public string makanConnectionString {
+            get {
+                return ((string)(this["makanConnectionString"]));
+            }
+        }
     }
 }

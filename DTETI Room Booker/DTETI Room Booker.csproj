@@ -339,6 +339,13 @@
     </Content>
     <None Include="Resources\PP.jpg" />
     <None Include="Resources\difta.jpg" />
+    <Content Include="makan.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="makan_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>makan.mdf</DependentUpon>
+    </Content>
     <Content Include="RoomDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
