@@ -143,24 +143,33 @@ namespace DTETI_Room_Booker.Forms
         {
             using (SqlCommand cmd = connection.CreateCommand())
             {
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = @"SELECT[Name], [Seats], [Description], [IsBooking] from [dbo].[Table] where [Id] = @id;";
-                cmd.Parameters.AddWithValue("@Id", id);
-                cmd.Connection.Open();
-
-                using(var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                try
                 {
-                    
-                    while (reader.Read())
-                    {
-                        roomName.Text = reader["Name"].ToString();
-                        roomCapacity.Text = reader["Seats"].ToString();
-                        roomExplanation.Text = reader["Description"].ToString();
-
-                    }
-
-                    
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = @"SELECT[Name], [Seats], [Description], [IsBooking] from [dbo].[Table] where [Id] = @id;";
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.Connection.Open();
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                try
+                {
+                    using (var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                    {
+
+                        while (reader.Read())
+                        {
+                            roomName.Text = reader["Name"].ToString();
+                            roomCapacity.Text = reader["Seats"].ToString();
+                            roomExplanation.Text = reader["Description"].ToString();
+
+                        }
+                    }
+                }
+                catch (Exception ex)
+                { MessageBox.Show(ex.Message);}
             }
         }
 
