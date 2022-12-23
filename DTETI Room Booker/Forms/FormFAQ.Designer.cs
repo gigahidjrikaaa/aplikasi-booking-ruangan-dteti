@@ -33,11 +33,12 @@
             this.btnSend = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.listView2 = new System.Windows.Forms.ListView();
             this.customTextBox1 = new DTETI_Room_Booker.CustomTextBox();
             this.txtBoxName = new DTETI_Room_Booker.CustomTextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblAsk = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -45,13 +46,14 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.vScrollBar1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -65,7 +67,7 @@
             this.panel3.Controls.Add(this.customTextBox1);
             this.panel3.Controls.Add(this.txtBoxName);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 384);
+            this.panel3.Location = new System.Drawing.Point(0, 501);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1073, 534);
             this.panel3.TabIndex = 3;
@@ -74,7 +76,7 @@
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSend.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btnSend.BackColor = ThemeColor.PrimaryColor;
             this.btnSend.ForeColor = System.Drawing.Color.White;
             this.btnSend.Location = new System.Drawing.Point(807, 32);
             this.btnSend.Name = "btnSend";
@@ -95,7 +97,7 @@
             // 
             // listView1
             // 
-            this.listView1.BackColor = System.Drawing.Color.DarkBlue;
+            this.listView1.BackColor = ThemeColor.PrimaryColor;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.Color.White;
@@ -106,16 +108,9 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(2448, -1);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(80, 1332);
-            this.vScrollBar1.TabIndex = 0;
-            // 
             // listView2
             // 
-            this.listView2.BackColor = System.Drawing.Color.DarkBlue;
+            this.listView2.BackColor = ThemeColor.PrimaryColor;
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView2.ForeColor = System.Drawing.Color.White;
@@ -185,6 +180,26 @@
             this.splitContainer1.SplitterDistance = 255;
             this.splitContainer1.TabIndex = 0;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lblAsk);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 384);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1073, 117);
+            this.panel4.TabIndex = 4;
+            this.panel4.BackColor = ThemeColor.PrimaryColor;
+            // 
+            // lblAsk
+            // 
+            this.lblAsk.AutoSize = true;
+            this.lblAsk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAsk.Location = new System.Drawing.Point(50, 44);
+            this.lblAsk.Name = "lblAsk";
+            this.lblAsk.Size = new System.Drawing.Size(386, 44);
+            this.lblAsk.TabIndex = 0;
+            this.lblAsk.Text = "ASK US ANYTHING!";
+            // 
             // FormFAQ
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -201,6 +216,8 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -208,7 +225,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private CustomTextBox customTextBox1;
@@ -217,5 +233,7 @@
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblAsk;
     }
 }
