@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,9 +43,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(137, 122);
+            this.label1.Location = new System.Drawing.Point(206, 191);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 22);
+            this.label1.Size = new System.Drawing.Size(106, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name:";
             // 
@@ -53,9 +55,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(137, 202);
+            this.label2.Location = new System.Drawing.Point(206, 316);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 22);
+            this.label2.Size = new System.Drawing.Size(97, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "Prodi:";
             // 
@@ -64,39 +67,44 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(137, 163);
+            this.label3.Location = new System.Drawing.Point(206, 255);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 22);
+            this.label3.Size = new System.Drawing.Size(80, 33);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nim:";
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(250, 124);
+            this.txtname.Location = new System.Drawing.Point(375, 194);
+            this.txtname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(262, 22);
+            this.txtname.Size = new System.Drawing.Size(391, 31);
             this.txtname.TabIndex = 4;
             // 
             // txtprodi
             // 
-            this.txtprodi.Location = new System.Drawing.Point(250, 202);
+            this.txtprodi.Location = new System.Drawing.Point(375, 316);
+            this.txtprodi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtprodi.Name = "txtprodi";
-            this.txtprodi.Size = new System.Drawing.Size(262, 22);
+            this.txtprodi.Size = new System.Drawing.Size(391, 31);
             this.txtprodi.TabIndex = 5;
             // 
             // txtnim
             // 
-            this.txtnim.Location = new System.Drawing.Point(250, 163);
+            this.txtnim.Location = new System.Drawing.Point(375, 255);
+            this.txtnim.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtnim.Name = "txtnim";
-            this.txtnim.Size = new System.Drawing.Size(262, 22);
+            this.txtnim.Size = new System.Drawing.Size(391, 31);
             this.txtnim.TabIndex = 6;
             // 
             // insert
             // 
             this.insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insert.Location = new System.Drawing.Point(282, 268);
+            this.insert.Location = new System.Drawing.Point(423, 419);
+            this.insert.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.insert.Name = "insert";
-            this.insert.Size = new System.Drawing.Size(118, 37);
+            this.insert.Size = new System.Drawing.Size(177, 58);
             this.insert.TabIndex = 7;
             this.insert.Text = "Insert";
             this.insert.UseVisualStyleBackColor = true;
@@ -104,9 +112,9 @@
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 703);
             this.Controls.Add(this.insert);
             this.Controls.Add(this.txtnim);
             this.Controls.Add(this.txtprodi);
@@ -114,6 +122,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Register";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
