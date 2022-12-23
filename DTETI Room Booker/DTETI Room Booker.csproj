@@ -221,6 +221,12 @@
     <Compile Include="Forms\FormRooms.Designer.cs">
       <DependentUpon>FormRooms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormRooms.resx">
       <DependentUpon>FormRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -354,6 +363,13 @@
     </Content>
     <None Include="Resources\PP.jpg" />
     <None Include="Resources\difta.jpg" />
+    <Content Include="DatabaseUser.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DatabaseUser_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DatabaseUser.mdf</DependentUpon>
+    </Content>
     <None Include="Resources\daffa.jpg" />
     <Content Include="RoomDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

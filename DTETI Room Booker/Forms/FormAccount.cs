@@ -23,5 +23,10 @@ namespace DTETI_Room_Booker.Forms
         {
 
         }
+
+        private void FormAccount_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
