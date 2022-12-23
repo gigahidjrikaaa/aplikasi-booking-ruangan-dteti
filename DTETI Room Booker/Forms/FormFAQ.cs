@@ -110,6 +110,10 @@ namespace DTETI_Room_Booker.Forms
             Questions questions = new Questions();
             var request = new RestRequest("api/Questions").AddJsonBody(questions);
             var response = client.ExecutePostAsync<Questions>(request);
+
+            txtBoxName.ResetText();
+            customTextBox1.ResetText();
+            MessageBox.Show("You successfully submitted your question!");
         }
 
         private void btnSend_MouseDown(object sender, MouseEventArgs e)
