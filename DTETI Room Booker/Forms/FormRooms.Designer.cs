@@ -68,6 +68,7 @@
             this.History = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureRoom = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -542,6 +543,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.roomExplanation);
             this.panel3.Controls.Add(this.pictureRoom);
             this.panel3.Controls.Add(this.roomName);
@@ -563,6 +565,18 @@
             this.pictureRoom.TabIndex = 1;
             this.pictureRoom.TabStop = false;
             this.pictureRoom.Click += new System.EventHandler(this.pictureRoom_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(41, 373);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "People";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Rooms
             // 
@@ -633,5 +647,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
     }
 }
