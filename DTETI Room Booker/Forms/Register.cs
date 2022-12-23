@@ -28,10 +28,10 @@ namespace DTETI_Room_Booker.Forms
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Insert Succes");
-            this.Close();
             FormMainMenu menu = new FormMainMenu();
             menu.ShowDialog();
-            
+            this.Hide();
+
         }
 
         private void Register_Load(object sender, EventArgs e)
