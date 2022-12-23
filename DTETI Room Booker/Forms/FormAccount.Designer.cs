@@ -31,6 +31,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.nameProfile = new System.Windows.Forms.Label();
+            this.nimProfile = new System.Windows.Forms.Label();
+            this.prodiProfile = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,9 +53,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(380, 162);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.Size = new System.Drawing.Size(75, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Username";
+            this.label1.Text = "Name:";
             // 
             // label2
             // 
@@ -60,16 +64,64 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(380, 253);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 25);
+            this.label2.Size = new System.Drawing.Size(58, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Email :";
+            this.label2.Text = "NIM:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // nameProfile
+            // 
+            this.nameProfile.AutoSize = true;
+            this.nameProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameProfile.ForeColor = System.Drawing.Color.Black;
+            this.nameProfile.Location = new System.Drawing.Point(514, 162);
+            this.nameProfile.Name = "nameProfile";
+            this.nameProfile.Size = new System.Drawing.Size(64, 25);
+            this.nameProfile.TabIndex = 3;
+            this.nameProfile.Text = "label3";
+            // 
+            // nimProfile
+            // 
+            this.nimProfile.AutoSize = true;
+            this.nimProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nimProfile.ForeColor = System.Drawing.Color.Black;
+            this.nimProfile.Location = new System.Drawing.Point(514, 253);
+            this.nimProfile.Name = "nimProfile";
+            this.nimProfile.Size = new System.Drawing.Size(64, 25);
+            this.nimProfile.TabIndex = 4;
+            this.nimProfile.Text = "label3";
+            // 
+            // prodiProfile
+            // 
+            this.prodiProfile.AutoSize = true;
+            this.prodiProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prodiProfile.ForeColor = System.Drawing.Color.Black;
+            this.prodiProfile.Location = new System.Drawing.Point(514, 322);
+            this.prodiProfile.Name = "prodiProfile";
+            this.prodiProfile.Size = new System.Drawing.Size(64, 25);
+            this.prodiProfile.TabIndex = 5;
+            this.prodiProfile.Text = "label3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(380, 322);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 25);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Prodi:";
             // 
             // FormAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 563);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.prodiProfile);
+            this.Controls.Add(this.nimProfile);
+            this.Controls.Add(this.nameProfile);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -88,5 +140,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label nameProfile;
+        private System.Windows.Forms.Label nimProfile;
+        private System.Windows.Forms.Label prodiProfile;
+        private System.Windows.Forms.Label label3;
     }
 }
