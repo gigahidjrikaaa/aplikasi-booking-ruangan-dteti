@@ -2,7 +2,7 @@
 By Giga, Difta, and Daffa
 
 ## Description
-This is our final project in OOP course, to create a program which uses NuGet Package, and a self-built API. This project also must be tested.
+This is our final project in OOP course, to create a program which uses NuGet Package, and a self-built API. The program aims to help the loaning system of rooms. By using a program, the loaning system should be way more efficient.
 
 ## How-To
 1. Because the database is not online (it's local), change all of the DataSource of each database to their respective paths. 
