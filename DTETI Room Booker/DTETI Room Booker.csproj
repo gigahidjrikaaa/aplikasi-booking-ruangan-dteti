@@ -49,6 +49,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="RestSharp">
+      <Version>108.0.3</Version>
+    </PackageReference>
     <PackageReference Include="WhatsappContactLibNETF" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
