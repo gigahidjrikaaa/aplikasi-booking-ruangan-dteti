@@ -83,6 +83,10 @@
             this.btnSend.TabIndex = 1;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.btnSend.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnSend_MouseDown);
+            this.btnSend.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnSend_MouseUp);
+            this.btnSend.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnSend_MouseUp);
             // 
             // customTextBox1
             // 
@@ -134,6 +138,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1073, 117);
             this.panel4.TabIndex = 4;
+            this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_ChangeColor);
             // 
             // lblAsk
             // 
@@ -164,12 +169,13 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.listView2);
+            this.splitContainer1.Panel1MinSize = 450;
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.listView1);
             this.splitContainer1.Size = new System.Drawing.Size(973, 284);
-            this.splitContainer1.SplitterDistance = 255;
+            this.splitContainer1.SplitterDistance = 450;
             this.splitContainer1.TabIndex = 0;
             // 
             // listView2
@@ -180,9 +186,10 @@
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(0, 0);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(255, 284);
+            this.listView2.Size = new System.Drawing.Size(450, 284);
             this.listView2.TabIndex = 1;
             this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listView_ClickColor);
             // 
             // listView1
             // 
@@ -192,9 +199,10 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(714, 284);
+            this.listView1.Size = new System.Drawing.Size(519, 284);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listView_ClickColor);
             // 
             // FormFAQ
             // 

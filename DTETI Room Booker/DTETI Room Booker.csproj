@@ -370,6 +370,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseUser.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\daffa.jpg" />
     <Content Include="RoomDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

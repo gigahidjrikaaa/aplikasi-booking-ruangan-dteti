@@ -17,9 +17,9 @@ namespace DTETI_Room_Booker.Forms
         public FormFAQ()
         {
             InitializeComponent();
-            LoadTheme();
             LoadListQuestion(listView2);
             LoadListAnswer(listView1);
+            LoadTheme();
         }
         public void LoadTheme()
         {
@@ -27,10 +27,14 @@ namespace DTETI_Room_Booker.Forms
             {
                 if (btns.GetType() == typeof(Button))
                 {
-                    Button btn = (Button)btns;
-                    btn.BackColor = ThemeColor.PrimaryColor;
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                    btns.BackColor = ThemeColor.PrimaryColor;
+                }
+            }
+            foreach (Control lstView in this.Controls)
+            {
+                if (lstView.GetType() == typeof(ListView))
+                {
+                    lstView.BackColor = ThemeColor.PrimaryColor;
                 }
             }
         }
@@ -49,10 +53,17 @@ namespace DTETI_Room_Booker.Forms
             listView.Columns.Add(header);
             listView.Items.Clear();
 
-            var result = JsonConvert.DeserializeObject<List<Questions>>(response.Content);
-            foreach(var item in result)
+            try
             {
-                listView.Items.Add(item.question);
+                var result = JsonConvert.DeserializeObject<List<Questions>>(response.Content);
+                foreach (var item in result)
+                {
+                    listView.Items.Add(item.question);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             
             listView.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -72,10 +83,17 @@ namespace DTETI_Room_Booker.Forms
             listView.Columns.Add(header);
             listView.Items.Clear();
 
-            var result = JsonConvert.DeserializeObject<List<Questions>>(response.Content);
-            foreach (var item in result)
+            try
             {
-                listView.Items.Add(item.answer);
+                var result = JsonConvert.DeserializeObject<List<Questions>>(response.Content);
+                foreach (var item in result)
+                {
+                    listView.Items.Add(item.answer);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
             listView.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -92,6 +110,10 @@ namespace DTETI_Room_Booker.Forms
             Questions questions = new Questions();
             var request = new RestRequest("api/Questions").AddJsonBody(questions);
             var response = client.ExecutePostAsync<Questions>(request);
+
+            txtBoxName.ResetText();
+            customTextBox1.ResetText();
+            MessageBox.Show("You successfully submitted your question!");
         }
 
         private void btnSend_MouseDown(object sender, MouseEventArgs e)
@@ -106,9 +128,16 @@ namespace DTETI_Room_Booker.Forms
             thisButton.BackColor = ThemeColor.PrimaryColor;
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listView_ClickColor(object sender, MouseEventArgs e)
         {
+            ListView lstView = (ListView)sender;
+            lstView.BackColor = ThemeColor.PrimaryColor;
+        }
 
+        private void panel_ChangeColor(object sender, MouseEventArgs e)
+        {
+            Panel panel = (Panel)sender;
+            panel.BackColor = ThemeColor.PrimaryColor;
         }
 
         public class Questions

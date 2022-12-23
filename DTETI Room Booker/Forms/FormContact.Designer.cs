@@ -201,7 +201,7 @@
             this.circularPictureBox3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.circularPictureBox3.BorderSize = 2;
             this.circularPictureBox3.GradientAngle = 50F;
-            this.circularPictureBox3.Image = global::DTETI_Room_Booker.Properties.Resources.PP;
+            this.circularPictureBox3.Image = global::DTETI_Room_Booker.Properties.Resources.daffa;
             this.circularPictureBox3.Location = new System.Drawing.Point(70, 639);
             this.circularPictureBox3.Name = "circularPictureBox3";
             this.circularPictureBox3.Size = new System.Drawing.Size(166, 166);
