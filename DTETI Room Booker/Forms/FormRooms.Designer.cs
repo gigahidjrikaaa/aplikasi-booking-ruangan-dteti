@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rooms));
             this.roomName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.roomCapacity = new System.Windows.Forms.Label();
+            this.roomExplanation = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -83,11 +83,12 @@
             this.roomName.BackColor = System.Drawing.SystemColors.HighlightText;
             this.roomName.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomName.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.roomName.Location = new System.Drawing.Point(20, 181);
+            this.roomName.Location = new System.Drawing.Point(20, 290);
             this.roomName.Name = "roomName";
             this.roomName.Size = new System.Drawing.Size(220, 31);
             this.roomName.TabIndex = 2;
             this.roomName.Text = "Conference Room";
+            this.roomName.Click += new System.EventHandler(this.roomName_Click);
             // 
             // label2
             // 
@@ -95,34 +96,34 @@
             this.label2.BackColor = System.Drawing.SystemColors.HighlightText;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(22, 220);
+            this.label2.Location = new System.Drawing.Point(22, 345);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Capacity :";
             // 
-            // label3
+            // roomCapacity
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(22, 238);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "12 People";
+            this.roomCapacity.AutoSize = true;
+            this.roomCapacity.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.roomCapacity.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomCapacity.ForeColor = System.Drawing.Color.Black;
+            this.roomCapacity.Location = new System.Drawing.Point(23, 373);
+            this.roomCapacity.Name = "roomCapacity";
+            this.roomCapacity.Size = new System.Drawing.Size(65, 16);
+            this.roomCapacity.TabIndex = 4;
+            this.roomCapacity.Text = "12 People";
             // 
-            // label4
+            // roomExplanation
             // 
-            this.label4.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(23, 273);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 128);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "This Room Is Good For you so dont forget to \r\nmake ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.roomExplanation.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.roomExplanation.ForeColor = System.Drawing.Color.Black;
+            this.roomExplanation.Location = new System.Drawing.Point(23, 409);
+            this.roomExplanation.Name = "roomExplanation";
+            this.roomExplanation.Size = new System.Drawing.Size(305, 128);
+            this.roomExplanation.TabIndex = 5;
+            this.roomExplanation.Text = "This Room Is Good For you so dont forget to \r\nmake ";
+            this.roomExplanation.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel1
             // 
@@ -131,7 +132,7 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(21, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(980, 57);
+            this.panel1.Size = new System.Drawing.Size(1025, 57);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -182,11 +183,12 @@
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(324, 75);
+            this.panel2.Location = new System.Drawing.Point(369, 78);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(677, 648);
             this.panel2.TabIndex = 11;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button2
             // 
@@ -540,14 +542,14 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.roomExplanation);
             this.panel3.Controls.Add(this.pictureRoom);
             this.panel3.Controls.Add(this.roomName);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.roomCapacity);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(21, 78);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(297, 645);
+            this.panel3.Size = new System.Drawing.Size(342, 645);
             this.panel3.TabIndex = 12;
             // 
             // pictureRoom
@@ -556,7 +558,7 @@
             this.pictureRoom.Image = global::DTETI_Room_Booker.Properties.Resources.Computer_Room;
             this.pictureRoom.Location = new System.Drawing.Point(22, 25);
             this.pictureRoom.Name = "pictureRoom";
-            this.pictureRoom.Size = new System.Drawing.Size(251, 153);
+            this.pictureRoom.Size = new System.Drawing.Size(306, 232);
             this.pictureRoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureRoom.TabIndex = 1;
             this.pictureRoom.TabStop = false;
@@ -566,7 +568,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1040, 761);
+            this.ClientSize = new System.Drawing.Size(1058, 771);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -595,8 +597,8 @@
         private System.Windows.Forms.PictureBox pictureRoom;
         private System.Windows.Forms.Label roomName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label roomCapacity;
+        private System.Windows.Forms.Label roomExplanation;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

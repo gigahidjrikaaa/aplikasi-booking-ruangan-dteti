@@ -213,6 +213,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RoomDBDataSet.cs">
+      <DependentUpon>RoomDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RoomDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
@@ -247,6 +255,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RoomDBDataSet.xsc">
+      <DependentUpon>RoomDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RoomDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RoomDBDataSet.xss">
+      <DependentUpon>RoomDBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -308,6 +327,13 @@
     <Content Include="assets\images\RoomPicture\SR_Room 2.png" />
     <Content Include="assets\images\RoomPicture\SR_Room 3.jpg" />
     <Content Include="assets\images\RoomPicture\SR_Room 4.png" />
+    <Content Include="RoomDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RoomDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RoomDB.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

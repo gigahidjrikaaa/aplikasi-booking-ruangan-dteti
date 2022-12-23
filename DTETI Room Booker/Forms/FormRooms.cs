@@ -13,11 +13,13 @@ using System.Windows.Forms;
 using System.Xml;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Button = System.Windows.Forms.Button;
+using System.Data.SqlClient;
 
 namespace DTETI_Room_Booker.Forms
 {
     public partial class Rooms : Form
     {
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Programming\Projek UAS PBO\aplikasi-booking-ruangan-dteti\DTETI Room Booker\RoomDB.mdf"";Integrated Security=True");
         public Rooms()
         {
             InitializeComponent();
@@ -41,8 +43,6 @@ namespace DTETI_Room_Booker.Forms
         {
 
             selectedRoom(conferenceRoom_1, null);
-
-            label4.Text = "hello isnsa sajdnsa sjdsa jdns jsdns dsdnsada sjsdbsa aij said jiasdiasd jasd asdjias dias diasjd makan nasi goreng";
             dateTimePicker1.MinDate = DateTime.Now;
             dateTimePicker1.MaxDate = DateTime.Now.AddDays(30);
         }
@@ -54,6 +54,7 @@ namespace DTETI_Room_Booker.Forms
             switch (button.Name) {
                 case "conferenceRoom_1":
                     pictureRoom.Image = Properties.Resources.CR_Room_1;
+                    getData(1);
                     break;
                 case "conferenceRoom_2":
                     pictureRoom.Image = Properties.Resources.CR_Room_2;
@@ -125,6 +126,30 @@ namespace DTETI_Room_Booker.Forms
             click.ForeColor = Color.White;
         }
 
+        private void getData(int id)
+        {
+            using (SqlCommand cmd = connection.CreateCommand())
+            {
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = @"SELECT[Name], [Seats], [Description], [IsBooking] from [dbo].[Table] where [Id] = @id;";
+                cmd.Parameters.AddWithValue("@Id", id);
+                cmd.Connection.Open();
+
+                using(var reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                {
+                    
+                    while (reader.Read())
+                    {
+                        roomName.Text = reader["Name"].ToString();
+                        roomCapacity.Text = reader["Seats"].ToString();
+                        roomExplanation.Text = reader["Description"].ToString();
+
+                    }
+
+                    
+                }
+            }
+        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -167,6 +192,16 @@ namespace DTETI_Room_Booker.Forms
         }
 
         private void pictureRoom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void roomName_Click(object sender, EventArgs e)
         {
 
         }

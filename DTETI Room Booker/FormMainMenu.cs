@@ -122,7 +122,7 @@ namespace DTETI_Room_Booker
 
         private void btnBook_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormRegister(), sender);
+            OpenChildForm(new Forms.FormAccount(), sender);
         }
 
         private void btnRooms_Click(object sender, EventArgs e)
@@ -199,6 +199,11 @@ namespace DTETI_Room_Booker
             Location = new Point(0, 0);
             Rectangle workingRectangle = Screen.PrimaryScreen.WorkingArea;
             this.Size = new Size(workingRectangle.Width, workingRectangle.Height);
+        }
+
+        private void panelDesktopPane_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
