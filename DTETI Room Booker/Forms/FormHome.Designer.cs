@@ -41,17 +41,19 @@
             this.panelContent.BackgroundImage = global::DTETI_Room_Booker.Properties.Resources.dteti_transparent;
             this.panelContent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelContent.ForeColor = System.Drawing.Color.White;
-            this.panelContent.Location = new System.Drawing.Point(130, 46);
+            this.panelContent.Location = new System.Drawing.Point(173, 58);
+            this.panelContent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(514, 377);
+            this.panelContent.Size = new System.Drawing.Size(685, 471);
             this.panelContent.TabIndex = 0;
             // 
             // FormHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 499);
+            this.ClientSize = new System.Drawing.Size(1076, 624);
             this.Controls.Add(this.panelContent);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormHome";
             this.Text = "HOME";
             this.ResumeLayout(false);

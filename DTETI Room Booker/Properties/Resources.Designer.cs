@@ -133,6 +133,16 @@ namespace DTETI_Room_Booker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap difta {
+            get {
+                object obj = ResourceManager.GetObject("difta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap discussionRoom {
             get {
                 object obj = ResourceManager.GetObject("discussionRoom", resourceCulture);
@@ -216,6 +226,16 @@ namespace DTETI_Room_Booker.Properties {
         internal static System.Drawing.Bitmap Phone_1 {
             get {
                 object obj = ResourceManager.GetObject("Phone_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PP {
+            get {
+                object obj = ResourceManager.GetObject("PP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

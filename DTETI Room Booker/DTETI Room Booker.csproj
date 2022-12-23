@@ -170,6 +170,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircularPictrueBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +337,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseBookings.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\PP.jpg" />
+    <None Include="Resources\difta.jpg" />
     <Content Include="RoomDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
