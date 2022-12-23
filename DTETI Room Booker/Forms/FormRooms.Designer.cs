@@ -110,9 +110,9 @@
             this.roomCapacity.ForeColor = System.Drawing.Color.Black;
             this.roomCapacity.Location = new System.Drawing.Point(23, 373);
             this.roomCapacity.Name = "roomCapacity";
-            this.roomCapacity.Size = new System.Drawing.Size(65, 16);
+            this.roomCapacity.Size = new System.Drawing.Size(21, 16);
             this.roomCapacity.TabIndex = 4;
-            this.roomCapacity.Text = "12 People";
+            this.roomCapacity.Text = "12";
             // 
             // roomExplanation
             // 
