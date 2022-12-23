@@ -19,7 +19,7 @@ namespace DTETI_Room_Booker.Forms
 {
     public partial class Rooms : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Astaga Ngoding\aplikasi-booking-ruangan-dteti\DTETI Room Booker\RoomDB.mdf"";Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Programming\Projek UAS PBO\aplikasi-booking-ruangan-dteti\DTETI Room Booker\RoomDB.mdf"";Integrated Security=True");
         public Rooms()
         {
             InitializeComponent();
@@ -54,46 +54,59 @@ namespace DTETI_Room_Booker.Forms
             switch (button.Name) {
                 case "conferenceRoom_1":
                     pictureRoom.Image = Properties.Resources.CR_Room_1;
-                    getData(1);
+                    getData(11);
                     break;
                 case "conferenceRoom_2":
                     pictureRoom.Image = Properties.Resources.CR_Room_2;
+                    getData(12);
                     break;
                 case "conferenceRoom_3":
                     pictureRoom.Image = Properties.Resources.CR_Room_3;
+                    getData(13);
                     break;
                 case "conferenceRoom_4":
                     pictureRoom.Image = Properties.Resources.CR_Room_4;
+                    getData(14);
                     break;
                 case "meetingRoom_1":
                     pictureRoom.Image = Properties.Resources.MR_Room_1;
+                    getData(8);
                     break;
                 case "meetingRoom_2":
                     pictureRoom.Image = Properties.Resources.MR_Room_2;
+                    getData(9);
                     break;
                 case "meetingRoom_3":
                     pictureRoom.Image = Properties.Resources.MR_Room_3;
+                    getData(10);
                     break;
                 case "studyRoom_1":
                     pictureRoom.Image = Properties.Resources.SR_Room_1;
+                    getData(4);
                     break;
                 case "studyRoom_2":
                     pictureRoom.Image = Properties.Resources.SR_Room_2;
+                    getData(5);
                     break;
                 case "studyRoom_3":
                     pictureRoom.Image = Properties.Resources.SR_Room_3;
+                    getData(6);
                     break;
                 case "studyRoom_4":
                     pictureRoom.Image = Properties.Resources.SR_Room_4;
+                    getData(7);
                     break;
                 case "discussionRoom":
                     pictureRoom.Image = Properties.Resources.discussionRoom;
+                    getData(3);
                     break;
                 case "coffeeAndStudy":
                     pictureRoom.Image = Properties.Resources.Coffee_and_Study_Room;
+                    getData(1);
                     break;
                 case "computerRoom":
                     pictureRoom.Image = Properties.Resources.Computer_Room;
+                    getData(2);
                     break;
                 default:
                     pictureRoom.Image = Properties.Resources.Help_1;
@@ -202,6 +215,11 @@ namespace DTETI_Room_Booker.Forms
         }
 
         private void roomName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -327,13 +327,6 @@
     <Content Include="assets\images\RoomPicture\SR_Room 2.png" />
     <Content Include="assets\images\RoomPicture\SR_Room 3.jpg" />
     <Content Include="assets\images\RoomPicture\SR_Room 4.png" />
-    <Content Include="DatabaseBookings.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DatabaseBookings_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DatabaseBookings.mdf</DependentUpon>
-    </Content>
     <Content Include="RoomDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
