@@ -20,17 +20,33 @@ namespace DTETI_Room_Booker.Forms
 
         private void insert_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Astaga Ngoding\aplikasi-booking-ruangan-dteti\DTETI Room Booker\DatabaseUser.mdf"";Integrated Security=True");
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into [TableUser](name,nim,prodi) values ('"+txtname.Text+"','"+txtnim.Text+"','"+txtprodi.Text+"')";
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Insert Succes");
-            FormMainMenu menu = new FormMainMenu();
-            menu.ShowDialog();
-            this.Hide();
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Astaga Ngoding\aplikasi-booking-ruangan-dteti\DTETI Room Booker\DatabaseUser.mdf"";Integrated Security=True");
+
+                if (txtname.Text == "" ||  txtnim.Text == ""||  txtprodi.Text == "") {
+                    MessageBox.Show("Please Fill Form");
+                }
+                else
+                {
+                    con.Open();
+                    SqlCommand cmd = con.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into [TableUser](name,nim,prodi) values ('" + txtname.Text + "','" + txtnim.Text + "','" + txtprodi.Text + "')";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Register Success");
+                    FormMainMenu menu = new FormMainMenu();
+                    menu.ShowDialog();
+                    this.Hide();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
