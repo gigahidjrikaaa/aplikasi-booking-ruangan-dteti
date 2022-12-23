@@ -19,7 +19,7 @@ namespace DTETI_Room_Booker.Forms
 {
     public partial class Rooms : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Programming\Projek UAS PBO\aplikasi-booking-ruangan-dteti\DTETI Room Booker\RoomDB.mdf"";Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Astaga Ngoding\aplikasi-booking-ruangan-dteti\DTETI Room Booker\RoomDB.mdf"";Integrated Security=True");
         public Rooms()
         {
             InitializeComponent();
