@@ -67,8 +67,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.History = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureRoom = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureRoom = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -89,7 +89,6 @@
             this.roomName.Size = new System.Drawing.Size(220, 31);
             this.roomName.TabIndex = 2;
             this.roomName.Text = "Conference Room";
-            this.roomName.Click += new System.EventHandler(this.roomName_Click);
             // 
             // label2
             // 
@@ -124,7 +123,6 @@
             this.roomExplanation.Size = new System.Drawing.Size(305, 128);
             this.roomExplanation.TabIndex = 5;
             this.roomExplanation.Text = "This Room Is Good For you so dont forget to \r\nmake ";
-            this.roomExplanation.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel1
             // 
@@ -135,7 +133,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1025, 57);
             this.panel1.TabIndex = 9;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label5
             // 
@@ -155,7 +152,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
             this.dateTimePicker1.TabIndex = 6;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label6
             // 
@@ -167,7 +163,6 @@
             this.label6.Size = new System.Drawing.Size(85, 19);
             this.label6.TabIndex = 8;
             this.label6.Text = "Date        : ";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel2
             // 
@@ -189,7 +184,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(677, 648);
             this.panel2.TabIndex = 11;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button2
             // 
@@ -235,7 +229,6 @@
             this.label11.Size = new System.Drawing.Size(208, 19);
             this.label11.TabIndex = 1;
             this.label11.Text = "Aturan Pemesanan Ruangan";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // panel4
             // 
@@ -247,7 +240,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(569, 42);
             this.panel4.TabIndex = 32;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label10
             // 
@@ -491,7 +483,6 @@
             this.label8.Size = new System.Drawing.Size(86, 19);
             this.label8.TabIndex = 17;
             this.label8.Text = "Room      : ";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // comboBox1
             // 
@@ -554,18 +545,6 @@
             this.panel3.Size = new System.Drawing.Size(342, 645);
             this.panel3.TabIndex = 12;
             // 
-            // pictureRoom
-            // 
-            this.pictureRoom.ErrorImage = null;
-            this.pictureRoom.Image = global::DTETI_Room_Booker.Properties.Resources.Computer_Room;
-            this.pictureRoom.Location = new System.Drawing.Point(22, 25);
-            this.pictureRoom.Name = "pictureRoom";
-            this.pictureRoom.Size = new System.Drawing.Size(306, 232);
-            this.pictureRoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureRoom.TabIndex = 1;
-            this.pictureRoom.TabStop = false;
-            this.pictureRoom.Click += new System.EventHandler(this.pictureRoom_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -576,13 +555,23 @@
             this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 35;
             this.label1.Text = "People";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureRoom
+            // 
+            this.pictureRoom.ErrorImage = null;
+            this.pictureRoom.Image = global::DTETI_Room_Booker.Properties.Resources.Computer_Room;
+            this.pictureRoom.Location = new System.Drawing.Point(22, 25);
+            this.pictureRoom.Name = "pictureRoom";
+            this.pictureRoom.Size = new System.Drawing.Size(306, 232);
+            this.pictureRoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureRoom.TabIndex = 1;
+            this.pictureRoom.TabStop = false;
             // 
             // Rooms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1058, 771);
+            this.ClientSize = new System.Drawing.Size(1168, 822);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
